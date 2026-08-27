@@ -1,0 +1,8 @@
+applications:
+  - name: devops-demo-app
+    path: app/target/devops-demo-app-1.0.0.jar
+    memory: 1G
+    random-route: true
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '[jre: {version: 17.+}]'
+      JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '[enabled: false]'
